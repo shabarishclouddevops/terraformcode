@@ -1,0 +1,11 @@
+aws_region = "us-east-1"
+vpc_cidr = "10.0.0.0/16"
+subnet_cidr = "10.0.1.0/24"
+instance_type = "t2.micro"
+key_name = "terraform-free-tier-key"
+public_key_path = "~/.ssh/id_rsa.pub"
+ssh_allowed_cidr = "YOUR_PUBLIC_IP/32"
+
+# Replace YOUR_PUBLIC_IP with your actual public IPv4 address.
+# Example: ssh_allowed_cidr = "203.0.113.10/32"
+# Example: ssh_allowed_cidr = "24.24.24.24/32"
