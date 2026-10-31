@@ -12,11 +12,6 @@ provider "aws" {
   region = "ap-south-2"
 }
 
-variable "environment" {
-  description = "The environment for the resources"
-  type        = string
-  default     = "dev"
-}
 
 # Create a VPC
 resource "aws_vpc" "apsouth_vpc" {
@@ -26,3 +21,4 @@ resource "aws_vpc" "apsouth_vpc" {
     Environment = var.environment
   }
 }
+
